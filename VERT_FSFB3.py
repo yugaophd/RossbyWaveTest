@@ -20,7 +20,7 @@ def  VERT_FSFB3(N2_uniform, Pmid_uniform):
     # Dz = length of depth interval in meters.
     # Returns:
     # c2 = vector of square of the wavespeed.
-    # Psi = matrix of eigenvectors (horizontal velocity structure functions).
+    # Psi = matrix of eigenvectors (horizontal velocity and pressure structure functions).
     # G  =  matrix of integral of eigenvectors (vertical velocity structure functions).
     # N2 = Brunt-Vaisla frequency squared calculated at the midpoint pressures.
     # Pmid = midpoint pressures.
