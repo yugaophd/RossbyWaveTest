@@ -1,4 +1,8 @@
-# Discretized wave projection problem
+#Surface Water and Ocean Topography Data Assimilation With Correlated Error Reduction
+The Surface Water and Ocean Topography (SWOT) satellite altimeter will provide unprecedented high-resolution two-dimensional wide-swath sea surface height (SSH) data. The SWOT altimetric data is expected to be affected by specially correlated errors. This study proposes a procedure that reduces the correlated error by embedding the Correlated Error Reduction (CER) into data assimilation scheme, and solve for the correlated SWOT errors as part of the assimilation. We compare the the performance of linear regression and data-driven machine learning approach in reducing correlated errors. With a Rossby wave test model, we design a series of experiments that compare linear regression (LR) and machine learning (ML) data assimilation techniques. We incorporate white noise and correlated along-track noise into the Rossby wave model, and reconstructing SSH field with LR model and Artificial Neural Networks (ANNs), respectively.
+
+
+## Discretized wave projection problem
 This project solves the discretized wave projection problem, given the vertical profiles of Temperature, Salinity, Pressure and depth inteval length.
 
 VERT_FSFB2.m: 
