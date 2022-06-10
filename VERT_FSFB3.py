@@ -71,19 +71,19 @@ def  VERT_FSFB3(N2_uniform, Pmid_uniform):
     # Lambda:    The eigenvalues, each repeated according to its multiplicity.
     # Psi: The normalized (unit "length") eigenvectors, such that the 
     # column ``Psi[:,i]`` is the eigenvector corresponding to the eigenvalue Lambda[i].
-    
+    #print(D)
     # Remove Barotropic Mode 
     # Lambda = 1/(radius of deformation * f)^2 (m/s)^{-2}
     # BT mode, rd = infinity. hence lambda = 0.
     ind = np.where(Lambda >= 1e-11)
     Lambda = Lambda[ind]
-    Psi = Psi[:, ind].reshape([D.shape[0], len(ind[0])])
+    Psi = Psi[:, ind].reshape([D.shape[0], len(ind[0])]) # Gao 5.21.2022
     
     # Sort eigenvalues and eigenvectors
     idx = np.argsort(Lambda)
     Lambda_sorted = Lambda[idx]
     Psi_sorted = Psi[:,idx]
-    c2 = 1 / Lambda_sorted # Modal Speed
+    c2 = 1 / Lambda_sorted #  Wave Speed Squared
     
     # Reference eigencevtor matrix to top value
     for i in range(Psi_sorted.shape[1]):
